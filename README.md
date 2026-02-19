@@ -1,0 +1,1 @@
+This project is simple, but the purpose is to show off my work and my abilities. The web page is modern, clean and aesthetic. It also has the ability for people to contact me if they desire using EmailJS
