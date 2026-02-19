@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Freelance coder specialising in web development, mobile apps, and API integrations. Let's build something great together.">
+    <meta property="og:title" content="Ethan | Freelance Developer">
+    <meta property="og:description"
+        content="Freelance coder specialising in web development, mobile apps, and API integrations.">
+    <meta property="og:type" content="website">
+    <title>Ethan | Freelance Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">&lt;E /&gt;</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link nav-link--cta">Let's Talk</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-content">
+            <p class="hero-greeting reveal">Hi, my name is</p>
+            <h1 class="hero-name reveal">Ethan.</h1>
+            <h2 class="hero-tagline reveal">I build <span class="typed-text" id="typed-text"></span><span
+                    class="cursor">|</span></h2>
+            <p class="hero-description reveal">
+                Freelance developer turning ideas into performant, beautiful digital products.
+                I craft clean code and pixel-perfect interfaces that help businesses grow.
+            </p>
+            <div class="hero-cta reveal">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+            <div class="hero-stats reveal">
+                <div class="stat">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">25+</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="about-image-wrapper">
+                        <div class="about-image-placeholder">
+                            <span>&lt;/&gt;</span>
+                        </div>
+                        <div class="about-image-border"></div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <p>
+                        I'm a freelance developer who loves turning complex problems into simple, elegant solutions.
+                        With a strong foundation in both front-end and back-end technologies, I deliver full-stack
+                        applications that are fast, accessible, and built to scale.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me exploring new technologies, contributing to open-source
+                        projects, or levelling up my skills on the latest frameworks and tools.
+                    </p>
+                    <p>
+                        I believe great software is built through clear communication, iterative development,
+                        and a genuine passion for craft. Let's create something awesome together.
+                    </p>
+                    <a href="#contact" class="btn btn-primary">Work With Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="section services" id="services">
+        <div class="container">
+            <h2 class="section-title reveal">What I Do</h2>
+            <p class="section-subtitle reveal">End-to-end development services tailored to your needs.</p>
+            <div class="services-grid">
+                <div class="service-card glass-card reveal">
+                    <div class="service-icon">🌐</div>
+                    <h3>Web Development</h3>
+                    <p>Responsive, high-performance websites and web apps built with modern frameworks and best
+                        practices.</p>
+                </div>
+                <div class="service-card glass-card reveal">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile Apps</h3>
+                    <p>Cross-platform mobile applications that feel native, built with React Native or Flutter.</p>
+                </div>
+                <div class="service-card glass-card reveal">
+                    <div class="service-icon">⚡</div>
+                    <h3>API Development</h3>
+                    <p>Robust, well-documented RESTful and GraphQL APIs that power your applications reliably.</p>
+                </div>
+                <div class="service-card glass-card reveal">
+                    <div class="service-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Clean, intuitive interfaces designed for the best user experience, from wireframe to
+                        pixel-perfect build.</p>
+                </div>
+                <div class="service-card glass-card reveal">
+                    <div class="service-icon">🗄️</div>
+                    <h3>Database Design</h3>
+                    <p>Efficient database architectures, migrations, and optimisations for SQL and NoSQL systems.</p>
+                </div>
+                <div class="service-card glass-card reveal">
+                    <div class="service-icon">🚀</div>
+                    <h3>DevOps & Deployment</h3>
+                    <p>CI/CD pipelines, cloud hosting setup, and deployment automation to ship with confidence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal">Featured Projects</h2>
+            <p class="section-subtitle reveal">A selection of work I'm proud of.</p>
+            <div class="projects-grid">
+                <article class="project-card glass-card reveal">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <span>Project 1</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="View live site">🔗</a>
+                            <a href="#" class="project-link" aria-label="View source code">💻</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack e-commerce solution with real-time inventory, Stripe payments, and an admin
+                            dashboard.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Stripe</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card glass-card reveal">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <span>Project 2</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="View live site">🔗</a>
+                            <a href="#" class="project-link" aria-label="View source code">💻</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>Collaborative project tracker with drag-and-drop boards, real-time sync, and team chat.</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Socket.io</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card glass-card reveal">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <span>Project 3</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="View live site">🔗</a>
+                            <a href="#" class="project-link" aria-label="View source code">💻</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Fitness Tracking API</h3>
+                        <p>RESTful API serving workout data, progress analytics, and personalised training plans.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">Redis</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card glass-card reveal">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <span>Project 4</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="View live site">🔗</a>
+                            <a href="#" class="project-link" aria-label="View source code">💻</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Dashboard</h3>
+                        <p>Real-time analytics dashboard with interactive charts, data filtering, and PDF export.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Tailwind</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">Tech Stack</h2>
+            <p class="section-subtitle reveal">Technologies I work with daily.</p>
+            <div class="skills-grid">
+                <div class="skill-item glass-card reveal">
+                    <div class="skill-icon">⚛️</div>
+                    <span>React</span>
+                </div>
+                <div class="skill-item glass-card reveal">
+                    <div class="skill-icon">🟢</div>
+                    <span>Node.js</span>
+                </div>
+                <div class="skill-item glass-card reveal">
+                    <div class="skill-icon">🟦</div>
+                    <span>TypeScript</span>
+                </div>
+                <div class="skill-item glass-card reveal">
+                    <div class="skill-icon">🐍</div>
+                    <span>Python</span>
+                </div>
+                <div class="skill-item glass-card reveal">
+                    <div class="skill-icon">▲</div>
+                    <span>Next.js</span>
+                </div>
+                <div class="skill-item glass-card reveal">
+                    <div class="skill-icon">🍃</div>
+                    <span>MongoDB</span>
+                </div>
+                <div class="skill-item glass-card reveal">
+                    <div class="skill-icon">🐘</div>
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="skill-item glass-card reveal">
+                    <div class="skill-icon">🐳</div>
+                    <span>Docker</span>
+                </div>
+                <div class="skill-item glass-card reveal">
+                    <div class="skill-icon">☁️</div>
+                    <span>AWS</span>
+                </div>
+                <div class="skill-item glass-card reveal">
+                    <div class="skill-icon">🔥</div>
+                    <span>Firebase</span>
+                </div>
+                <div class="skill-item glass-card reveal">
+                    <div class="skill-icon">🎨</div>
+                    <span>CSS / Sass</span>
+                </div>
+                <div class="skill-item glass-card reveal">
+                    <div class="skill-icon">📊</div>
+                    <span>GraphQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title reveal">What Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-card reveal">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Ethan delivered our platform ahead of schedule and exceeded every expectation.
+                        His attention to detail and communication throughout the project were outstanding."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">JD</div>
+                        <div>
+                            <strong>Jane Doe</strong>
+                            <span>CEO, TechStart Inc.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card reveal">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Working with Ethan was a game-changer for our startup. He built a scalable API
+                        that handles thousands of requests without breaking a sweat."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MS</div>
+                        <div>
+                            <strong>Mike Smith</strong>
+                            <span>CTO, DataFlow</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card reveal">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Professional, reliable, and incredibly talented. Ethan turned our rough ideas into
+                        a polished product that our users absolutely love."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">SL</div>
+                        <div>
+                            <strong>Sarah Lee</strong>
+                            <span>Founder, Bloom Studio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <p class="section-subtitle reveal">Have a project in mind? Let's make it happen.</p>
+            <div class="contact-grid">
+                <form class="contact-form glass-card reveal" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project idea">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message 🚀</button>
+                </form>
+                <div class="contact-info reveal">
+                    <div class="contact-info-card glass-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <a href="mailto:ethanmatzke12@gmail.com">ethanmatzke12@gmail.com</a>
+                    </div>
+                    <div class="contact-info-card glass-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Location</h3>
+                        <p>Available Worldwide (Remote)</p>
+                    </div>
+                    <div class="contact-socials glass-card">
+                        <h3>Find Me On</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="GitHub">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#hero" class="footer-logo">&lt;E /&gt;</a>
+            <p>&copy; 2026 Ethan. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
